@@ -1,0 +1,34 @@
+*** Settings ***
+Library           Selenium2Library
+
+*** Keywords ***
+job_claim_submit_button
+    [Documentation]    作业任务认领
+    click Element    xpath=//form[@class="ui form"]/div[2]/div/div[1]
+
+job_refuse_submit_button
+    [Documentation]    作业拒绝
+    click Element    xpath=//form[@class="ui form"]/div[2]/div/div[2]
+
+job_claim_link
+    click element    link=作业认领
+
+job_assgin_button
+    [Documentation]    作业转发
+    click element    xpath=//table/tbody/tr[1]/td[12]/a[2]
+
+job_submit_link
+    [Documentation]    作业提交
+    click element    link=提交作业
+
+job_process
+    [Documentation]    作业进程
+    click element    link=作业进程
+
+job_valid_refuse_button
+    [Documentation]    作业拒绝验收
+    click element    xpath=//form/div[3]/div/div[2]
+
+job_valid_pass
+    [Documentation]    验收通过
+    click element    xpath=//form/div[3]/div/div[1]

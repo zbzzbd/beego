@@ -1,0 +1,12 @@
+*** Settings ***
+Library           Selenium2Library
+Resource          ../keyword_manager.txt
+Variables         ../dev_conf.py
+
+*** Test Cases ***
+create
+    [Documentation]    项目正常登记
+    ${date}    gettime    epoch
+    login    ${manager}    123456    修改密码
+    project_create    chinarun_${date}    1000    5    23    14
+    close browser

@@ -1,0 +1,11 @@
+__all__ = ['base_url','db_url','db_port','db_user','db_password','db_name','manager','employeer','arter','technoloy']
+base_url='http://localhost:8080'
+db_url='localhost'
+db_port='3306'
+db_user='root'
+db_password='root'
+db_name='achilles'
+manager='test1@chinarun.com'
+employeer='test2@chinarun.com'
+arter='test3@chinarun.com'
+technoloy='zhangbingzhen@chinarun.com'

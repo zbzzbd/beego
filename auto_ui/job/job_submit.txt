@@ -1,0 +1,10 @@
+*** Settings ***
+Library           Selenium2Library
+Resource          ../keyword_manager.txt
+Variables         ../dev_conf.py
+
+*** Test Cases ***
+job_submit
+    [Documentation]    作业提交
+    login    ${technoloy}    123456    修改密码
+    job_submit    已经完成

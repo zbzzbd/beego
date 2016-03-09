@@ -1,0 +1,22 @@
+*** Settings ***
+Resource          ../keyword_manager.txt
+Library           Selenium2Library
+Variables         ../dev_conf.py
+
+*** Test Cases ***
+job_claim
+    [Documentation]    作业认领
+    login    ${technoloy}    123456    修改密码
+    job_claim    好的，可以完成
+    close browser
+
+job_refuse
+    [Documentation]    作业拒绝
+    login    ${technoloy}    123456    修改密码
+    job_refuse    无法完成
+    close browser
+
+job_assign
+    [Documentation]    作业转发
+    login    ${technoloy}    123456    修改密码
+    job_assign    请帮忙完成

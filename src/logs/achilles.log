@@ -1,0 +1,1130 @@
+2016/03/04 15:08:58 [base.go:53] [D] request finished in : 61.044367ms
+2016/03/04 15:09:51 [base.go:53] [D] request finished in : 29.178423ms
+2016/03/04 15:09:55 [password.go:65] [D] user.Password.Encryped : []interface {}{
+    &user.Password{pwd:"123456", salt:"gbeRss", encryptedPwd:"5073f9bcd5c669ed1d54ecdb9ace1722"},
+}
+
+2016/03/04 15:09:55 [user.go:38] [D] user.User.Login : user = []interface {}{
+    &user.User{
+        user: &models.User{
+            Id:       0x1c,
+            Name:     "test1",
+            Email:    "test1@chinarun.com",
+            Mobile:   "",
+            Password: "5073f9bcd5c669ed1d54ecdb9ace1722",
+            Salt:     "gbeRss",
+            Avatar:   "",
+            Company:  &models.Company{
+                Id:      0x1,
+                Code:    "SH",
+                Name:    "上海自由博爱",
+                Address: "上海松江",
+                City:    "上海",
+                Created: time.Time{
+                    sec:  63587829945,
+                    nsec: 0,
+                    loc:  &time.Location{
+                        name: "Local",
+                        zone: {
+                            {name:"CDT", offset:32400, isDST:true},
+                            {name:"CST", offset:28800, isDST:false},
+                        },
+                        tx: {
+                            {when:-933494400, index:0x0, isstd:false, isutc:false},
+                            {when:-923130000, index:0x1, isstd:false, isutc:false},
+                            {when:-908784000, index:0x0, isstd:false, isutc:false},
+                            {when:-891594000, index:0x1, isstd:false, isutc:false},
+                            {when:515520000, index:0x0, isstd:false, isutc:false},
+                            {when:527007600, index:0x1, isstd:false, isutc:false},
+                            {when:545155200, index:0x0, isstd:false, isutc:false},
+                            {when:558457200, index:0x1, isstd:false, isutc:false},
+                            {when:576604800, index:0x0, isstd:false, isutc:false},
+                            {when:589906800, index:0x1, isstd:false, isutc:false},
+                            {when:608659200, index:0x0, isstd:false, isutc:false},
+                            {when:621961200, index:0x1, isstd:false, isutc:false},
+                            {when:640108800, index:0x0, isstd:false, isutc:false},
+                            {when:653410800, index:0x1, isstd:false, isutc:false},
+                            {when:671558400, index:0x0, isstd:false, isutc:false},
+                            {when:684860400, index:0x1, isstd:false, isutc:false},
+                        },
+                        cacheStart: 684860400,
+                        cacheEnd:   9223372036854775807,
+                        cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                    },
+                },
+                Updated: time.Time{
+                    sec:  63587829945,
+                    nsec: 0,
+                    loc:  &time.Location{
+                        name: "Local",
+                        zone: {
+                            {name:"CDT", offset:32400, isDST:true},
+                            {name:"CST", offset:28800, isDST:false},
+                        },
+                        tx: {
+                            {when:-933494400, index:0x0, isstd:false, isutc:false},
+                            {when:-923130000, index:0x1, isstd:false, isutc:false},
+                            {when:-908784000, index:0x0, isstd:false, isutc:false},
+                            {when:-891594000, index:0x1, isstd:false, isutc:false},
+                            {when:515520000, index:0x0, isstd:false, isutc:false},
+                            {when:527007600, index:0x1, isstd:false, isutc:false},
+                            {when:545155200, index:0x0, isstd:false, isutc:false},
+                            {when:558457200, index:0x1, isstd:false, isutc:false},
+                            {when:576604800, index:0x0, isstd:false, isutc:false},
+                            {when:589906800, index:0x1, isstd:false, isutc:false},
+                            {when:608659200, index:0x0, isstd:false, isutc:false},
+                            {when:621961200, index:0x1, isstd:false, isutc:false},
+                            {when:640108800, index:0x0, isstd:false, isutc:false},
+                            {when:653410800, index:0x1, isstd:false, isutc:false},
+                            {when:671558400, index:0x0, isstd:false, isutc:false},
+                            {when:684860400, index:0x1, isstd:false, isutc:false},
+                        },
+                        cacheStart: 684860400,
+                        cacheEnd:   9223372036854775807,
+                        cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                    },
+                },
+            },
+            Roles:         "projectManager",
+            LastLoginTime: time.Time{
+                sec:  63592672195,
+                nsec: 774169039,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Created: time.Time{
+                sec:  63587830014,
+                nsec: 0,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Updated: time.Time{
+                sec:  63587830014,
+                nsec: 0,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Deleted: time.Time{},
+        },
+        email: &user.Email{
+            email: "test1@chinarun.com",
+            valid: &validation.Validation{},
+        },
+        password: &user.Password{pwd:"123456", salt:"gbeRss", encryptedPwd:"5073f9bcd5c669ed1d54ecdb9ace1722"},
+    },
+}
+
+2016/03/04 15:09:55 [base.go:53] [D] request finished in : 19.330287ms
+2016/03/04 15:09:55 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{},
+}
+, count=62
+2016/03/04 15:09:55 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "submit_status": int(3),
+    },
+}
+, count=1
+2016/03/04 15:09:55 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "valid_status": int(0),
+    },
+}
+, count=40
+2016/03/04 15:09:55 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "valid_status": int(2),
+    },
+}
+, count=4
+2016/03/04 15:09:55 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "claim_status":      int(1),
+        "submit_status__lt": int(3),
+        "valid_status":      int(1),
+    },
+}
+, count=11
+2016/03/04 15:09:55 [base.go:53] [D] request finished in : 36.08266ms
+2016/03/04 15:10:33 [base.go:53] [D] request finished in : 27.975104ms
+2016/03/04 15:11:11 [base.go:53] [D] request finished in : 29.621062ms
+2016/03/04 15:11:30 [base.go:53] [D] request finished in : 31.668236ms
+2016/03/04 15:11:30 [password.go:65] [D] user.Password.Encryped : []interface {}{
+    &user.Password{pwd:"123456", salt:"gbeRss", encryptedPwd:"5073f9bcd5c669ed1d54ecdb9ace1722"},
+}
+
+2016/03/04 15:11:31 [user.go:38] [D] user.User.Login : user = []interface {}{
+    &user.User{
+        user: &models.User{
+            Id:       0x1c,
+            Name:     "test1",
+            Email:    "test1@chinarun.com",
+            Mobile:   "",
+            Password: "5073f9bcd5c669ed1d54ecdb9ace1722",
+            Salt:     "gbeRss",
+            Avatar:   "",
+            Company:  &models.Company{
+                Id:      0x1,
+                Code:    "SH",
+                Name:    "上海自由博爱",
+                Address: "上海松江",
+                City:    "上海",
+                Created: time.Time{
+                    sec:  63587829945,
+                    nsec: 0,
+                    loc:  &time.Location{
+                        name: "Local",
+                        zone: {
+                            {name:"CDT", offset:32400, isDST:true},
+                            {name:"CST", offset:28800, isDST:false},
+                        },
+                        tx: {
+                            {when:-933494400, index:0x0, isstd:false, isutc:false},
+                            {when:-923130000, index:0x1, isstd:false, isutc:false},
+                            {when:-908784000, index:0x0, isstd:false, isutc:false},
+                            {when:-891594000, index:0x1, isstd:false, isutc:false},
+                            {when:515520000, index:0x0, isstd:false, isutc:false},
+                            {when:527007600, index:0x1, isstd:false, isutc:false},
+                            {when:545155200, index:0x0, isstd:false, isutc:false},
+                            {when:558457200, index:0x1, isstd:false, isutc:false},
+                            {when:576604800, index:0x0, isstd:false, isutc:false},
+                            {when:589906800, index:0x1, isstd:false, isutc:false},
+                            {when:608659200, index:0x0, isstd:false, isutc:false},
+                            {when:621961200, index:0x1, isstd:false, isutc:false},
+                            {when:640108800, index:0x0, isstd:false, isutc:false},
+                            {when:653410800, index:0x1, isstd:false, isutc:false},
+                            {when:671558400, index:0x0, isstd:false, isutc:false},
+                            {when:684860400, index:0x1, isstd:false, isutc:false},
+                        },
+                        cacheStart: 684860400,
+                        cacheEnd:   9223372036854775807,
+                        cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                    },
+                },
+                Updated: time.Time{
+                    sec:  63587829945,
+                    nsec: 0,
+                    loc:  &time.Location{
+                        name: "Local",
+                        zone: {
+                            {name:"CDT", offset:32400, isDST:true},
+                            {name:"CST", offset:28800, isDST:false},
+                        },
+                        tx: {
+                            {when:-933494400, index:0x0, isstd:false, isutc:false},
+                            {when:-923130000, index:0x1, isstd:false, isutc:false},
+                            {when:-908784000, index:0x0, isstd:false, isutc:false},
+                            {when:-891594000, index:0x1, isstd:false, isutc:false},
+                            {when:515520000, index:0x0, isstd:false, isutc:false},
+                            {when:527007600, index:0x1, isstd:false, isutc:false},
+                            {when:545155200, index:0x0, isstd:false, isutc:false},
+                            {when:558457200, index:0x1, isstd:false, isutc:false},
+                            {when:576604800, index:0x0, isstd:false, isutc:false},
+                            {when:589906800, index:0x1, isstd:false, isutc:false},
+                            {when:608659200, index:0x0, isstd:false, isutc:false},
+                            {when:621961200, index:0x1, isstd:false, isutc:false},
+                            {when:640108800, index:0x0, isstd:false, isutc:false},
+                            {when:653410800, index:0x1, isstd:false, isutc:false},
+                            {when:671558400, index:0x0, isstd:false, isutc:false},
+                            {when:684860400, index:0x1, isstd:false, isutc:false},
+                        },
+                        cacheStart: 684860400,
+                        cacheEnd:   9223372036854775807,
+                        cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                    },
+                },
+            },
+            Roles:         "projectManager",
+            LastLoginTime: time.Time{
+                sec:  63592672290,
+                nsec: 995104995,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Created: time.Time{
+                sec:  63587830014,
+                nsec: 0,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Updated: time.Time{
+                sec:  63587830014,
+                nsec: 0,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Deleted: time.Time{},
+        },
+        email: &user.Email{
+            email: "test1@chinarun.com",
+            valid: &validation.Validation{},
+        },
+        password: &user.Password{pwd:"123456", salt:"gbeRss", encryptedPwd:"5073f9bcd5c669ed1d54ecdb9ace1722"},
+    },
+}
+
+2016/03/04 15:11:31 [base.go:53] [D] request finished in : 12.116019ms
+2016/03/04 15:11:31 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{},
+}
+, count=62
+2016/03/04 15:11:31 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "submit_status": int(3),
+    },
+}
+, count=1
+2016/03/04 15:11:31 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "valid_status": int(0),
+    },
+}
+, count=40
+2016/03/04 15:11:31 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "valid_status": int(2),
+    },
+}
+, count=4
+2016/03/04 15:11:31 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "valid_status":      int(1),
+        "claim_status":      int(1),
+        "submit_status__lt": int(3),
+    },
+}
+, count=11
+2016/03/04 15:11:31 [base.go:53] [D] request finished in : 36.040705ms
+2016/03/04 16:49:03 [base.go:53] [D] request finished in : 49.87537ms
+2016/03/04 16:51:23 [base.go:53] [D] request finished in : 29.507704ms
+2016/03/04 17:00:04 [base.go:53] [D] request finished in : 42.690389ms
+2016/03/04 17:00:05 [password.go:65] [D] user.Password.Encryped : []interface {}{
+    &user.Password{pwd:"123456", salt:"gbeRss", encryptedPwd:"5073f9bcd5c669ed1d54ecdb9ace1722"},
+}
+
+2016/03/04 17:00:05 [user.go:38] [D] user.User.Login : user = []interface {}{
+    &user.User{
+        user: &models.User{
+            Id:       0x1c,
+            Name:     "test1",
+            Email:    "test1@chinarun.com",
+            Mobile:   "",
+            Password: "5073f9bcd5c669ed1d54ecdb9ace1722",
+            Salt:     "gbeRss",
+            Avatar:   "",
+            Company:  &models.Company{
+                Id:      0x1,
+                Code:    "SH",
+                Name:    "上海自由博爱",
+                Address: "上海松江",
+                City:    "上海",
+                Created: time.Time{
+                    sec:  63587829945,
+                    nsec: 0,
+                    loc:  &time.Location{
+                        name: "Local",
+                        zone: {
+                            {name:"CDT", offset:32400, isDST:true},
+                            {name:"CST", offset:28800, isDST:false},
+                        },
+                        tx: {
+                            {when:-933494400, index:0x0, isstd:false, isutc:false},
+                            {when:-923130000, index:0x1, isstd:false, isutc:false},
+                            {when:-908784000, index:0x0, isstd:false, isutc:false},
+                            {when:-891594000, index:0x1, isstd:false, isutc:false},
+                            {when:515520000, index:0x0, isstd:false, isutc:false},
+                            {when:527007600, index:0x1, isstd:false, isutc:false},
+                            {when:545155200, index:0x0, isstd:false, isutc:false},
+                            {when:558457200, index:0x1, isstd:false, isutc:false},
+                            {when:576604800, index:0x0, isstd:false, isutc:false},
+                            {when:589906800, index:0x1, isstd:false, isutc:false},
+                            {when:608659200, index:0x0, isstd:false, isutc:false},
+                            {when:621961200, index:0x1, isstd:false, isutc:false},
+                            {when:640108800, index:0x0, isstd:false, isutc:false},
+                            {when:653410800, index:0x1, isstd:false, isutc:false},
+                            {when:671558400, index:0x0, isstd:false, isutc:false},
+                            {when:684860400, index:0x1, isstd:false, isutc:false},
+                        },
+                        cacheStart: 684860400,
+                        cacheEnd:   9223372036854775807,
+                        cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                    },
+                },
+                Updated: time.Time{
+                    sec:  63587829945,
+                    nsec: 0,
+                    loc:  &time.Location{
+                        name: "Local",
+                        zone: {
+                            {name:"CDT", offset:32400, isDST:true},
+                            {name:"CST", offset:28800, isDST:false},
+                        },
+                        tx: {
+                            {when:-933494400, index:0x0, isstd:false, isutc:false},
+                            {when:-923130000, index:0x1, isstd:false, isutc:false},
+                            {when:-908784000, index:0x0, isstd:false, isutc:false},
+                            {when:-891594000, index:0x1, isstd:false, isutc:false},
+                            {when:515520000, index:0x0, isstd:false, isutc:false},
+                            {when:527007600, index:0x1, isstd:false, isutc:false},
+                            {when:545155200, index:0x0, isstd:false, isutc:false},
+                            {when:558457200, index:0x1, isstd:false, isutc:false},
+                            {when:576604800, index:0x0, isstd:false, isutc:false},
+                            {when:589906800, index:0x1, isstd:false, isutc:false},
+                            {when:608659200, index:0x0, isstd:false, isutc:false},
+                            {when:621961200, index:0x1, isstd:false, isutc:false},
+                            {when:640108800, index:0x0, isstd:false, isutc:false},
+                            {when:653410800, index:0x1, isstd:false, isutc:false},
+                            {when:671558400, index:0x0, isstd:false, isutc:false},
+                            {when:684860400, index:0x1, isstd:false, isutc:false},
+                        },
+                        cacheStart: 684860400,
+                        cacheEnd:   9223372036854775807,
+                        cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                    },
+                },
+            },
+            Roles:         "projectManager",
+            LastLoginTime: time.Time{
+                sec:  63592678805,
+                nsec: 716143273,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Created: time.Time{
+                sec:  63587830014,
+                nsec: 0,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Updated: time.Time{
+                sec:  63587830014,
+                nsec: 0,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Deleted: time.Time{},
+        },
+        email: &user.Email{
+            email: "test1@chinarun.com",
+            valid: &validation.Validation{},
+        },
+        password: &user.Password{pwd:"123456", salt:"gbeRss", encryptedPwd:"5073f9bcd5c669ed1d54ecdb9ace1722"},
+    },
+}
+
+2016/03/04 17:00:05 [base.go:53] [D] request finished in : 13.36227ms
+2016/03/04 17:00:05 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{},
+}
+, count=62
+2016/03/04 17:00:05 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "submit_status": int(3),
+    },
+}
+, count=1
+2016/03/04 17:00:05 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "valid_status": int(0),
+    },
+}
+, count=40
+2016/03/04 17:00:05 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "valid_status": int(2),
+    },
+}
+, count=4
+2016/03/04 17:00:05 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "valid_status":      int(1),
+        "claim_status":      int(1),
+        "submit_status__lt": int(3),
+    },
+}
+, count=11
+2016/03/04 17:00:05 [base.go:53] [D] request finished in : 37.779469ms
+2016/03/04 17:09:43 [base.go:53] [D] request finished in : 44.526612ms
+2016/03/04 17:09:44 [password.go:65] [D] user.Password.Encryped : []interface {}{
+    &user.Password{pwd:"123456", salt:"gbeRss", encryptedPwd:"5073f9bcd5c669ed1d54ecdb9ace1722"},
+}
+
+2016/03/04 17:09:44 [user.go:38] [D] user.User.Login : user = []interface {}{
+    &user.User{
+        user: &models.User{
+            Id:       0x1c,
+            Name:     "test1",
+            Email:    "test1@chinarun.com",
+            Mobile:   "",
+            Password: "5073f9bcd5c669ed1d54ecdb9ace1722",
+            Salt:     "gbeRss",
+            Avatar:   "",
+            Company:  &models.Company{
+                Id:      0x1,
+                Code:    "SH",
+                Name:    "上海自由博爱",
+                Address: "上海松江",
+                City:    "上海",
+                Created: time.Time{
+                    sec:  63587829945,
+                    nsec: 0,
+                    loc:  &time.Location{
+                        name: "Local",
+                        zone: {
+                            {name:"CDT", offset:32400, isDST:true},
+                            {name:"CST", offset:28800, isDST:false},
+                        },
+                        tx: {
+                            {when:-933494400, index:0x0, isstd:false, isutc:false},
+                            {when:-923130000, index:0x1, isstd:false, isutc:false},
+                            {when:-908784000, index:0x0, isstd:false, isutc:false},
+                            {when:-891594000, index:0x1, isstd:false, isutc:false},
+                            {when:515520000, index:0x0, isstd:false, isutc:false},
+                            {when:527007600, index:0x1, isstd:false, isutc:false},
+                            {when:545155200, index:0x0, isstd:false, isutc:false},
+                            {when:558457200, index:0x1, isstd:false, isutc:false},
+                            {when:576604800, index:0x0, isstd:false, isutc:false},
+                            {when:589906800, index:0x1, isstd:false, isutc:false},
+                            {when:608659200, index:0x0, isstd:false, isutc:false},
+                            {when:621961200, index:0x1, isstd:false, isutc:false},
+                            {when:640108800, index:0x0, isstd:false, isutc:false},
+                            {when:653410800, index:0x1, isstd:false, isutc:false},
+                            {when:671558400, index:0x0, isstd:false, isutc:false},
+                            {when:684860400, index:0x1, isstd:false, isutc:false},
+                        },
+                        cacheStart: 684860400,
+                        cacheEnd:   9223372036854775807,
+                        cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                    },
+                },
+                Updated: time.Time{
+                    sec:  63587829945,
+                    nsec: 0,
+                    loc:  &time.Location{
+                        name: "Local",
+                        zone: {
+                            {name:"CDT", offset:32400, isDST:true},
+                            {name:"CST", offset:28800, isDST:false},
+                        },
+                        tx: {
+                            {when:-933494400, index:0x0, isstd:false, isutc:false},
+                            {when:-923130000, index:0x1, isstd:false, isutc:false},
+                            {when:-908784000, index:0x0, isstd:false, isutc:false},
+                            {when:-891594000, index:0x1, isstd:false, isutc:false},
+                            {when:515520000, index:0x0, isstd:false, isutc:false},
+                            {when:527007600, index:0x1, isstd:false, isutc:false},
+                            {when:545155200, index:0x0, isstd:false, isutc:false},
+                            {when:558457200, index:0x1, isstd:false, isutc:false},
+                            {when:576604800, index:0x0, isstd:false, isutc:false},
+                            {when:589906800, index:0x1, isstd:false, isutc:false},
+                            {when:608659200, index:0x0, isstd:false, isutc:false},
+                            {when:621961200, index:0x1, isstd:false, isutc:false},
+                            {when:640108800, index:0x0, isstd:false, isutc:false},
+                            {when:653410800, index:0x1, isstd:false, isutc:false},
+                            {when:671558400, index:0x0, isstd:false, isutc:false},
+                            {when:684860400, index:0x1, isstd:false, isutc:false},
+                        },
+                        cacheStart: 684860400,
+                        cacheEnd:   9223372036854775807,
+                        cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                    },
+                },
+            },
+            Roles:         "projectManager",
+            LastLoginTime: time.Time{
+                sec:  63592679384,
+                nsec: 207163669,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Created: time.Time{
+                sec:  63587830014,
+                nsec: 0,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Updated: time.Time{
+                sec:  63587830014,
+                nsec: 0,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Deleted: time.Time{},
+        },
+        email: &user.Email{
+            email: "test1@chinarun.com",
+            valid: &validation.Validation{},
+        },
+        password: &user.Password{pwd:"123456", salt:"gbeRss", encryptedPwd:"5073f9bcd5c669ed1d54ecdb9ace1722"},
+    },
+}
+
+2016/03/04 17:09:44 [base.go:53] [D] request finished in : 16.701066ms
+2016/03/04 17:09:44 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{},
+}
+, count=62
+2016/03/04 17:09:44 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "submit_status": int(3),
+    },
+}
+, count=1
+2016/03/04 17:09:44 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "valid_status": int(0),
+    },
+}
+, count=40
+2016/03/04 17:09:44 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "valid_status": int(2),
+    },
+}
+, count=4
+2016/03/04 17:09:44 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "valid_status":      int(1),
+        "claim_status":      int(1),
+        "submit_status__lt": int(3),
+    },
+}
+, count=11
+2016/03/04 17:09:44 [base.go:53] [D] request finished in : 42.732178ms
+2016/03/04 17:12:04 [base.go:53] [D] request finished in : 26.644827ms
+2016/03/04 17:12:04 [password.go:65] [D] user.Password.Encryped : []interface {}{
+    &user.Password{pwd:"123456", salt:"gbeRss", encryptedPwd:"5073f9bcd5c669ed1d54ecdb9ace1722"},
+}
+
+2016/03/04 17:12:04 [user.go:38] [D] user.User.Login : user = []interface {}{
+    &user.User{
+        user: &models.User{
+            Id:       0x1c,
+            Name:     "test1",
+            Email:    "test1@chinarun.com",
+            Mobile:   "",
+            Password: "5073f9bcd5c669ed1d54ecdb9ace1722",
+            Salt:     "gbeRss",
+            Avatar:   "",
+            Company:  &models.Company{
+                Id:      0x1,
+                Code:    "SH",
+                Name:    "上海自由博爱",
+                Address: "上海松江",
+                City:    "上海",
+                Created: time.Time{
+                    sec:  63587829945,
+                    nsec: 0,
+                    loc:  &time.Location{
+                        name: "Local",
+                        zone: {
+                            {name:"CDT", offset:32400, isDST:true},
+                            {name:"CST", offset:28800, isDST:false},
+                        },
+                        tx: {
+                            {when:-933494400, index:0x0, isstd:false, isutc:false},
+                            {when:-923130000, index:0x1, isstd:false, isutc:false},
+                            {when:-908784000, index:0x0, isstd:false, isutc:false},
+                            {when:-891594000, index:0x1, isstd:false, isutc:false},
+                            {when:515520000, index:0x0, isstd:false, isutc:false},
+                            {when:527007600, index:0x1, isstd:false, isutc:false},
+                            {when:545155200, index:0x0, isstd:false, isutc:false},
+                            {when:558457200, index:0x1, isstd:false, isutc:false},
+                            {when:576604800, index:0x0, isstd:false, isutc:false},
+                            {when:589906800, index:0x1, isstd:false, isutc:false},
+                            {when:608659200, index:0x0, isstd:false, isutc:false},
+                            {when:621961200, index:0x1, isstd:false, isutc:false},
+                            {when:640108800, index:0x0, isstd:false, isutc:false},
+                            {when:653410800, index:0x1, isstd:false, isutc:false},
+                            {when:671558400, index:0x0, isstd:false, isutc:false},
+                            {when:684860400, index:0x1, isstd:false, isutc:false},
+                        },
+                        cacheStart: 684860400,
+                        cacheEnd:   9223372036854775807,
+                        cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                    },
+                },
+                Updated: time.Time{
+                    sec:  63587829945,
+                    nsec: 0,
+                    loc:  &time.Location{
+                        name: "Local",
+                        zone: {
+                            {name:"CDT", offset:32400, isDST:true},
+                            {name:"CST", offset:28800, isDST:false},
+                        },
+                        tx: {
+                            {when:-933494400, index:0x0, isstd:false, isutc:false},
+                            {when:-923130000, index:0x1, isstd:false, isutc:false},
+                            {when:-908784000, index:0x0, isstd:false, isutc:false},
+                            {when:-891594000, index:0x1, isstd:false, isutc:false},
+                            {when:515520000, index:0x0, isstd:false, isutc:false},
+                            {when:527007600, index:0x1, isstd:false, isutc:false},
+                            {when:545155200, index:0x0, isstd:false, isutc:false},
+                            {when:558457200, index:0x1, isstd:false, isutc:false},
+                            {when:576604800, index:0x0, isstd:false, isutc:false},
+                            {when:589906800, index:0x1, isstd:false, isutc:false},
+                            {when:608659200, index:0x0, isstd:false, isutc:false},
+                            {when:621961200, index:0x1, isstd:false, isutc:false},
+                            {when:640108800, index:0x0, isstd:false, isutc:false},
+                            {when:653410800, index:0x1, isstd:false, isutc:false},
+                            {when:671558400, index:0x0, isstd:false, isutc:false},
+                            {when:684860400, index:0x1, isstd:false, isutc:false},
+                        },
+                        cacheStart: 684860400,
+                        cacheEnd:   9223372036854775807,
+                        cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                    },
+                },
+            },
+            Roles:         "projectManager",
+            LastLoginTime: time.Time{
+                sec:  63592679524,
+                nsec: 659436120,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Created: time.Time{
+                sec:  63587830014,
+                nsec: 0,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Updated: time.Time{
+                sec:  63587830014,
+                nsec: 0,
+                loc:  &time.Location{
+                    name: "Local",
+                    zone: {
+                        {name:"CDT", offset:32400, isDST:true},
+                        {name:"CST", offset:28800, isDST:false},
+                    },
+                    tx: {
+                        {when:-933494400, index:0x0, isstd:false, isutc:false},
+                        {when:-923130000, index:0x1, isstd:false, isutc:false},
+                        {when:-908784000, index:0x0, isstd:false, isutc:false},
+                        {when:-891594000, index:0x1, isstd:false, isutc:false},
+                        {when:515520000, index:0x0, isstd:false, isutc:false},
+                        {when:527007600, index:0x1, isstd:false, isutc:false},
+                        {when:545155200, index:0x0, isstd:false, isutc:false},
+                        {when:558457200, index:0x1, isstd:false, isutc:false},
+                        {when:576604800, index:0x0, isstd:false, isutc:false},
+                        {when:589906800, index:0x1, isstd:false, isutc:false},
+                        {when:608659200, index:0x0, isstd:false, isutc:false},
+                        {when:621961200, index:0x1, isstd:false, isutc:false},
+                        {when:640108800, index:0x0, isstd:false, isutc:false},
+                        {when:653410800, index:0x1, isstd:false, isutc:false},
+                        {when:671558400, index:0x0, isstd:false, isutc:false},
+                        {when:684860400, index:0x1, isstd:false, isutc:false},
+                    },
+                    cacheStart: 684860400,
+                    cacheEnd:   9223372036854775807,
+                    cacheZone:  &time.zone{(CYCLIC REFERENCE)},
+                },
+            },
+            Deleted: time.Time{},
+        },
+        email: &user.Email{
+            email: "test1@chinarun.com",
+            valid: &validation.Validation{},
+        },
+        password: &user.Password{pwd:"123456", salt:"gbeRss", encryptedPwd:"5073f9bcd5c669ed1d54ecdb9ace1722"},
+    },
+}
+
+2016/03/04 17:12:04 [base.go:53] [D] request finished in : 15.546065ms
+2016/03/04 17:12:04 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{},
+}
+, count=62
+2016/03/04 17:12:04 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "submit_status": int(3),
+    },
+}
+, count=1
+2016/03/04 17:12:04 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "valid_status": int(0),
+    },
+}
+, count=40
+2016/03/04 17:12:04 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "valid_status": int(2),
+    },
+}
+, count=4
+2016/03/04 17:12:04 [job_count.go:13] [D] services.job.GetCount : debug : filter=[]interface {}{
+    map[string]interface {}{
+        "valid_status":      int(1),
+        "claim_status":      int(1),
+        "submit_status__lt": int(3),
+    },
+}
+, count=11
+2016/03/04 17:12:04 [base.go:53] [D] request finished in : 44.9326ms

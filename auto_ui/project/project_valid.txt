@@ -1,0 +1,20 @@
+*** Settings ***
+Library           Selenium2Library
+Variables         ../dev_conf.py
+Resource          ../keyword_manager.txt
+Library           String
+
+*** Test Cases ***
+project_Valid
+    [Documentation]    作业审核
+    ${datetime}    get time    hello
+    login    ${employeer}    123456    修改密码
+    job_create    2    '网页制作'    '技术'    二级页面制作_${datetime}    14    ${datetime}
+    login    ${manager}    123456    修改密码
+    sleep    2s
+    project_valid    1    ${datetime}    请抓紧完成
+
+test_case
+    [Documentation]    时间打印
+    ${date}    get time    hello
+    log    ${date}

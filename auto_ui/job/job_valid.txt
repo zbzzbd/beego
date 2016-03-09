@@ -1,0 +1,19 @@
+*** Settings ***
+Library           Selenium2Library
+Variables         ../dev_conf.py
+Resource          ../keyword_manager.txt
+
+*** Test Cases ***
+job_valid
+    [Documentation]    作业验收,通过
+    login    ${employeer}    123456    修改密码
+    job_valid    已经完成
+    job_valid_pass
+    close browser
+
+job_valid_02
+    [Documentation]    拒绝验收
+    login    ${employeer}    123456    修改密码
+    job_valid    做的不好，请不要进程完成
+    job_valid_refuse_button
+    close browser

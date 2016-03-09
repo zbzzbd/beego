@@ -1,0 +1,142 @@
+*** Settings ***
+Library           Selenium2Library
+Library           Database Library
+Variables         dev_conf.py
+Resource          elements.txt
+
+*** Variables ***
+
+*** Keywords ***
+login
+    [Arguments]    ${email}    ${password}    ${message}
+    [Documentation]    登录
+    open Browser    ${base_url}
+    ${title}    get title
+    should be equal    ${title}    项目管理系统 | 登录
+    input text    name=email    ${email}
+    input text    name=password    ${password}
+    click Element    css=input[type='submit']
+    wait until page contains    ${message}
+
+modify_password
+    [Arguments]    ${old_password}    ${new_password}    ${message}
+    Click Element    link=修改密码
+    input text    name=oldPassword    ${old_password}
+    input text    name=newPassword    ${new_password}
+    input text    name=newPassword_confirm    ${new_password}
+    Click Element    css=input[type='submit']
+    Page should Contain    ${message}
+
+exit
+    [Documentation]    退出
+    Click Element    link=退出
+
+project_create
+    [Arguments]    ${project_name}    ${scale}    ${employeer}    ${art}    ${tech}
+    click Element    link=项目登记
+    input text    name=name    ${project_name}
+    input text    name=scale    ${scale}
+    Execute javascript    $('#projectBussiness').val(${employeer})
+    Execute javascript    $('#projectArt').val(${art})
+    Execute javascript    $('#projectTech').val(${tech})
+    Click Element    xpath=/html/body/div[1]/div/div[2]/div[2]/div/form/div[10]/div[1]
+    [Return]    ${project_name}
+
+project_process
+    [Documentation]    搜索验证
+    click button    xpath=/html/body/div[1]/div/div[2]/div[2]/div[1]/form/div[3]/button
+    ${rows}    get table rows    css=table
+    log    ${rows}
+    [Return]    ${rows}
+
+database
+    [Arguments]    ${sql}
+    Connect To Database Using Custom Params    pymysql    host="${db_url}",port=${db_port}, user="${db_user}",passwd="${db_password}",db="${db_name}",charset="utf8"
+    ${result}    query    ${sql}
+    Disconnect From Database
+    [Return]    ${result}
+
+project_edit
+    [Arguments]    ${nums}
+    click Link    xpath=/html/body/div[1]/div/div[2]/div[2]/div[2]/div[1]/table/tbody/tr[1]/td[15]/a
+    Clear Element Text    name=scale
+    input text    name=scale    ${nums}
+    click Element    xpath=/html/body/div[1]/div/div[2]/div[2]/div/form/div[10]/div[1]
+
+job_create
+    [Arguments]    ${project_id}    ${type}    ${department}    ${target}    ${employee}    ${time}
+    [Documentation]    Job创建
+    Click link    link=作业登记
+    Execute javascript    $('.ui.form select[name="project_id"]').val(${project_id})
+    click element    xpath=/html/body/div[1]/div/div[2]/div[2]/div/form/div[2]/div[2]/div
+    sleep    3s
+    click element    xpath=/html/body/div[1]/div/div[2]/div[2]/div/form/div[2]/div[2]/div/div[2]/div[2]
+    Execute javascript    $('.ui.form select[name="type"]').val(${type})
+    Execute javascript    $('#department').val(${department})
+    input text    name=target    ${target}
+    Execute javascript    $('#employee').val(${employee})
+    input text    id=datetimepicker-finish-time    ${time}
+    input text    name=message    请尽快完成，谢谢
+    Click Element    xpath=/html/body/div[1]/div/div[2]/div[2]/div/form/div[14]/div[1]
+    ${job_id}    database    select id from jobs where target='${target}'
+    close browser
+    [Return]    ${job_id}
+
+project_valid
+    [Arguments]    ${valid_result}    ${datetime}    ${remark}
+    [Documentation]    作业审核
+    click Element    link=作业审核
+    click element    xpath=//table/tbody/tr[1]/td[10]/a
+    select Radio button    result    ${valid_result}
+    input text    name=finish_time    ${datetime}
+    input text    name=message    ${remark}
+    click Element    css=button[type='submit']
+    sleep    3s
+    close browser
+
+job_claim
+    [Arguments]    ${remark}
+    [Documentation]    作业认领
+    job_claim_link
+    click element    xpath=//table/tbody/tr[1]/td[12]/a[1]
+    input text    name=remark    ${remark}
+    job_claim_submit_button
+
+job_refuse
+    [Arguments]    ${remark}
+    [Documentation]    拒绝认领
+    job_claim_link
+    click element    xpath=//table/tbody/tr[1]/td[12]/a[1]
+    input text    name=remark    ${remark}
+    job_refuse_submit_button
+
+job_assign
+    [Arguments]    ${remark}
+    [Documentation]    作业转发
+    job_claim_link
+    click element    xpath=//table/tbody/tr[1]/td[12]/a[2]
+    click element    xpath=//*[@id="job_assign_form"]/div[1]/div[2]/input
+    sleep    3s
+    click element    xpath=//*[@id="job_assign_form"]/div[1]/div[2]/div[2]/div[2]
+    input text    name=remark    ${remark}
+    click element    css=button[type='submit']
+
+job_submit
+    [Arguments]    ${remark}
+    [Documentation]    作业提交
+    job_submit_link
+    wait until page contains    作业列表
+    click element    xpath=//table/tbody/tr[1]/td[15]/a
+    choose file    name=files    /Users/zhangbingzhen/Desktop/logo.png
+    input text    name=remark    ${remark}
+    click element    xpath=//form/div[3]/div/div
+    close browser
+
+job_valid
+    [Arguments]    ${remark}
+    job_process
+    wait until page contains    作业列表
+    click element    xpath=//a[@class='ui purple button']
+    input text    id=submit-remark    ${remark}
+
+job_valid_refuse

@@ -1,0 +1,11 @@
+*** Settings ***
+Library           Selenium2Library
+Resource          ../keyword_manager.txt
+
+*** Variables ***
+
+*** Test Cases ***
+user_login
+    [Documentation]    正确用户名与正确密码登录
+    login    zhangbingzhen@chinarun.com    123456    修改密码
+    close Browser

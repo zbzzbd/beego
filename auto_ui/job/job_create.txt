@@ -1,0 +1,12 @@
+*** Settings ***
+Resource          ../keyword_manager.txt
+Library           Selenium2Library
+Variables         ../dev_conf.py
+
+*** Test Cases ***
+job_create
+    [Documentation]    作业创建
+    ${datetime}    gettime    epoch
+    login    ${employeer}    123456    修改密码
+    ${job_id}    job_create    2    '网页制作'    '技术'    二级页面制作_${datetime}    14
+    ...    2015-12-23 16:59

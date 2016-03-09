@@ -1,0 +1,287 @@
+body {
+    background-color: #e6f2f0;
+    background-size: cover;
+    position: relative;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+header {
+    background-size: cover;
+    height: 100px;
+}
+
+pre {
+    word-wrap: break-word;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.6);
+
+    text-align: center;
+
+    padding: 20px 0;
+}
+
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.blur {
+    -webkit-filter: blur(2px); /* Chrome, Opera */
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.hidden {
+    display: none!important;
+}
+
+.page {
+    background-color: #e6f3f0;
+    min-height: 100%;
+    padding: 0!important;
+}
+
+.header {
+    background-color: #fff;
+    line-height: 30px;
+    padding: 10px;
+}
+
+.m0 {
+    margin: 0!important;
+}
+
+.m10 {
+    margin: 10px!important;
+}
+
+.mb10 {
+    margin-bottom: 10px!important;
+}
+
+.mb20 {
+    margin-bottom: 20px!important;
+}
+
+.mb30 {
+    margin-bottom: 30px!important;
+}
+
+.p0 {
+    padding: 0!important;
+}
+
+.pl0 {
+    padding-left: 0!important;
+}
+
+.pr0 {
+    padding-right: 0!important;
+}
+
+.p10 {
+    padding: 10px!important;
+}
+
+.p20 {
+    padding: 20px!important;
+}
+
+.p30 {
+    padding: 30px!important;
+}
+
+.p50 {
+    padding: 50px!important;
+}
+
+.pb10 {
+    padding-bottom: 10px!important;
+}
+
+.pb20 {
+    padding-bottom: 20px!important;
+}
+
+.pb30 {
+    padding-bottom: 30px!important;
+}
+
+.pb50 {
+    padding-bottom: 50px!important;
+}
+
+.pb200 {
+    padding-bottom: 200px!important;
+}
+
+.pr10 {
+    padding-right: 10px!important;
+}
+
+.pr20 {
+    padding-right: 20px!important;
+}
+
+.full {
+    width: 100%!important;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    zoom: 1;
+}
+
+.fixed.bottom {
+    position: fixed;
+    bottom: 0;
+}
+
+.fixed.bottom .ui.card.full {
+    border-radius: 0;
+}
+
+.page .ui.teal.right.ribbon.label {
+    background: none!important;
+    border-color: transparent!important;
+    color: #aaa!important;
+    font-weight: normal!important;
+}
+
+td.green {
+    background-color: #21BA45;
+    color: #FFFFFF;
+    text-shadow: none;
+    background-image: none;
+}
+
+td.yellow {
+    background-color: #FBBD08;
+    color: #FFFFFF;
+    text-shadow: none;
+    background-image: none;
+}
+
+td.brown {
+    background-color: #A5673F;
+    color: #FFFFFF;
+    text-shadow: none;
+    background-image: none;
+}
+
+td.orange {
+    background-color: #F2711C;
+    color: #FFFFFF;
+    text-shadow: none;
+    background-image: none;
+}
+
+td.blue {
+    background-color: #2185D0;
+    color: #FFFFFF;
+    text-shadow: none;
+    background-image: none;
+}
+
+td.red {
+    background-color: #DB2828;
+    color: #FFFFFF;
+    text-shadow: none;
+    background-image: none;
+}
+
+td.pink {
+    background-color: #E03997;
+    color: #FFFFFF;
+    text-shadow: none;
+    background-image: none;
+}
+
+td.violet {
+    background-color: #6435C9;
+    color: #FFFFFF;
+    text-shadow: none;
+    background-image: none;
+}
+
+td.teal {
+    background-color: #00B5AD;
+    color: #FFFFFF;
+    text-shadow: none;
+    background-image: none; 
+}
+
+th {
+    min-width: 70px;
+}
+ 
+.xdsoft_datepicker th {
+    min-width: inherit;
+}
+ 
+a {
+    cursor: pointer;
+}
+
+a[href-tag] {
+    cursor: default!important; 
+}
+
+.body .container {
+    position: relative;
+    margin: auto;
+    min-height: 100%;
+    height: 100%;
+}
+
+.body .container .main-menu {
+    width: 180px;
+    float: left;
+}
+
+.body .container>.page {
+    margin-left: 180px;
+}
+
+.body .container>.page .fixed.bottom {
+    left: 180px;
+    right: 0;
+    bottom: 0;
+}
+
+.ui.card.p10.full .ui.grid.p10 .row label {
+    margin-left: 1rem!important;
+}
+
+.ui.card.p10.full .ui.grid.p10 .row .wide.column {
+    padding: 0!important;
+}

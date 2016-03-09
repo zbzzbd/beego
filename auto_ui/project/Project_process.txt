@@ -1,0 +1,17 @@
+*** Settings ***
+Resource          ../keyword_manager.txt
+Library           Selenium2Library
+
+*** Test Cases ***
+project_query
+    [Documentation]    项目列表查询验证
+    ${date}    gettime    epoch
+    login    chinaruntx@chinarun.com    123456    修改密码
+    ${project_name}    project_create    chinarun_${date}    1000    5    23    14
+    sleep    4
+    database    select * from projects where name='${project_name}'
+    ${rows}    project_process
+
+project_edit
+    [Documentation]    项目编辑
+    project_edit    2000
